@@ -44,7 +44,7 @@
         <button @click="healPlayer">HEAL</button>
         <button @click="surrender">SURRENDER</button>
       </section>
-      <section id="log" class="container">
+      <section id="log" class="container" v-if="logMassages.length > 0">
         <h2>Battle Log</h2>
         <ul>
           <li v-for="logMassage in logMassages">
