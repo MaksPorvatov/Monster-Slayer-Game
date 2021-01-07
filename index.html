@@ -41,7 +41,7 @@
         <button :disabled="mayUseSpecialAttack" @click="specialAttackMonster">
           SPECIAL ATTACK
         </button>
-        <button @click="healPlayer">HEAL</button>
+        <button :disabled="canNotHeal" @click="healPlayer">HEAL</button>
         <button @click="surrender">SURRENDER</button>
       </section>
       <section id="log" class="container" v-if="logMassages.length > 0">
